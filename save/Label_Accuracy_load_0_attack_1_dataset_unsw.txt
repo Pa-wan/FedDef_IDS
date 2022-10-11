@@ -1,0 +1,8 @@
+defense 0: 1.0 
+defense 1 alpha 1: 0.06 
+defense 1 alpha 0.5: 0.01 
+defense 1 alpha 0.25: 0.0 
+defense 2: 1.0 
+defense 3: 1.0 
+defense 4: 1.0 
+defense 5: 0.26
