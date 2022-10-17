@@ -1,8 +1,10 @@
 Test Accuracy on KDD99 dataset for non-iid distribution with FedDef
-python3 main_fed.py -dataset kdd -model dnn -save_model 0 -load_model 0 -local_bs 1000 -test_num -1 -attack 0 -defense 1 -alpha 1 -defense_lr 2e-1 -defense_epochs 40 -num_users 10 -lr 1e-2 -decay 0.8 -epochs 300 -decay_epochs 20 -iid 0
+python3 main_fed.py -dataset kdd -model dnn -save_model 0 -load_model 0 -local_bs 1000 -test_num -1 -attack 0 -defense 1 -alpha 1 -defense_lr 2e-1 -defense_epochs 40 -num_users 10 -lr 1e-2 -decay 0.9 -epochs 300 -decay_epochs 20 -iid 0
+
+python3 main_fed.py -dataset kdd -model dnn -save_model 0 -load_model 0 -local_bs 1000 -test_num -1 -attack 0 -defense 4 -alpha 0 -defense_lr 2e-1 -defense_epochs 40 -num_users 10 -lr 3e-2 -decay 0.9 -epochs 300 -decay_epochs 20 -iid 0
 
 Test Accuracy on UNSW dataset for iid distribution without defense
-python3 main_fed.py -dataset unsw -model dnn -save_model 0 -load_model 0 -local_bs 1000 -test_num -1 -attack 0 -defense 0 -alpha 1 -defense_lr 2e-1 -defense_epochs 40 -num_users 10 -lr 1e-2 -decay 0.7 -epochs 300 -decay_epochs 20 -iid 1
+python3 main_fed.py -dataset unsw -model dnn -save_model 0 -load_model 0 -local_bs 1000 -test_num -1 -attack 0 -defense 0 -alpha 0 -defense_lr 2e-1 -defense_epochs 40 -num_users 10 -lr 1e-2 -decay 0.7 -epochs 300 -decay_epochs 20 -iid 1
 
 Test Accuracy on UNSW dataset for iid distribution with FedDef
 python3 main_fed.py -dataset unsw -model dnn -save_model 0 -load_model 0 -local_bs 1000 -test_num -1 -attack 0 -defense 1 -alpha 1 -defense_lr 2e-1 -defense_epochs 40 -num_users 10 -lr 1.5e-2 -decay 0.9 -epochs 300 -decay_epochs 20 -iid 1
